@@ -1,8 +1,15 @@
+import Link from "next/link";
+
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100 h-10%">
+    <div className="navbar bg-base-200 h-[7vh]">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Pokémon TCG Showcase</a>
+        <Link className="btn btn-ghost text-xl" href="/">
+          Pokémon TCG Showcase
+        </Link>
+        <Link className="btn btn-outline ml-2" href="/set">
+          By set
+        </Link>
       </div>
       <div className="flex-none gap-2">
         <div className="form-control">

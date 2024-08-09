@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={montserrat.className + " flex flex-col"}>
         <NavBar></NavBar>
-        {children}
+        <div className="h-[93vh] place-content-center">{children}</div>
       </body>
     </html>
   );
