@@ -1,3 +1,7 @@
 export default function Sets() {
-  return <h1>loading...</h1>;
+  return (
+    <div>
+      <span className="loading loading-infinity loading-lg"></span>
+    </div>
+  );
 }

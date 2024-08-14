@@ -11,11 +11,11 @@ export default async function HomePage() {
 
   return (
     <div className="flex">
-      <div className="flex flex-1 flex-col -mr-48">
+      <div className="flex flex-1 flex-col">
         <div className="flex-1 p-4 content-end place-self-end">
           <h1 className="text-2xl font-bold">Check every Pokémon TCG card</h1>
         </div>
-        <div className="flex-1 p-4 place-self-end">
+        <div className="flex-1 p-4 text-right place-self-end">
           <p>
             In this site you can check cards and their attacks, PokéPowers,
             specific information, average prices and more!
@@ -26,21 +26,21 @@ export default async function HomePage() {
         {card1 && card2 && card3 && (
           <>
             <Image
-              className="-rotate-12 w-64 -mr-32 ease-in-out duration-100 hover:w-72"
+              className="-rotate-12 w-64 -mr-32 ease-in-out duration-100 hover:w-72 rounded-lg"
               src={card1.images.large}
               alt={card1.name}
               width={300}
               height={420}
             />
             <Image
-              className="z-50 ease-in-out duration-100 hover:w-80"
+              className="z-50 ease-in-out duration-100 hover:w-80 rounded-lg"
               src={card2.images.large}
               alt={card2.name}
               width={300}
               height={420}
             />
             <Image
-              className="rotate-12 w-64 -ml-32 ease-in-out duration-100 hover:w-72"
+              className="rotate-12 w-64 -ml-32 ease-in-out duration-100 hover:w-72 rounded-lg"
               src={card3.images.large}
               alt={card3.name}
               width={300}

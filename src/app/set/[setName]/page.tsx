@@ -14,12 +14,13 @@ export default async function SetPage({
         <div key={index} className="m-2 relative group">
           <Image
             src={card.images.small}
+            className="rounded-lg"
             alt={card.name + " card image"}
             width={250}
             height={250}
           />
           <Link href={"/card/" + card.id}>
-            <div className="cursor-pointer absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="rounded-lg cursor-pointer absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <p className="text-white text-xl font-bold">{card.name}</p>
             </div>
           </Link>

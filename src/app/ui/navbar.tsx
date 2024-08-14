@@ -8,7 +8,7 @@ export default function NavBar() {
           Pokémon TCG Showcase
         </Link>
         <Link className="btn btn-outline ml-2" href="/set">
-          By set
+          Sets
         </Link>
       </div>
       <div className="flex-none gap-2">
@@ -20,6 +20,12 @@ export default function NavBar() {
           />
         </div>
       </div>
+      <Link
+        className="btn btn-outline btn-success ml-2"
+        href="/advanced-search"
+      >
+        Advanced Search
+      </Link>
     </div>
   );
 }

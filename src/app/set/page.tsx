@@ -6,11 +6,10 @@ export default async function Sets() {
   const sets = await getAllSets();
   return (
     <>
-      <h1>Available Sets</h1>
       <div className="flex flex-row flex-wrap">
         {sets.map((set: any, index: any) => (
           <div className="flex p-2 w-1/6" key={index}>
-            <div className="flex w-full justify-center items-center flex-col max-w-sm rounded overflow-hidden shadow-lg bg-white p-2">
+            <div className="flex w-full justify-center rounded items-center flex-col max-w-sm overflow-hidden shadow-lg bg-white p-2">
               <div className="w-auto h-16 overflow-hidden">
                 <Image
                   className="object-contain w-full h-full"
